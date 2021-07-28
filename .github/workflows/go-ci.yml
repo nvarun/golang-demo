@@ -19,4 +19,4 @@ jobs:
         go-version: 1.15
 
     - name: Build Artifacts
-      run: go build -vx ./hello/hello.go
+      run: go build -v -x ./hello/hello.go
