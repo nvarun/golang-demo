@@ -1,44 +1,44 @@
 package main
 
 import (
-  "fmt"
-  //"rsc.io/quote"
-  "hello/greetings"
-  "log"
+	"fmt"
+	//"rsc.io/quote"
+	"hello/greetings"
+	"log"
 )
 
 func main() {
 
-  fmt.Println("Avengers Assemble!")
-  fmt.Println()
+	fmt.Println("Avengers Assemble!")
+	fmt.Println()
 
-  //fmt.Println(quote.Go())
-  //fmt.Println()
+	//fmt.Println(quote.Go())
+	//fmt.Println()
 
-  fmt.Println(greetings.Hello("Steve"))
-  fmt.Println()
+	fmt.Println(greetings.Hello("Steve"))
+	fmt.Println()
 
-  log.SetPrefix("greetings: ")
-  log.SetFlags(0)
+	log.SetPrefix("greetings: ")
+	log.SetFlags(0)
 
-  //message, err := greetings.Hello("")
+	//message, err := greetings.Hello("")
 
-  //if err != nil {
-  //  log.Fatal(err)
-  //}
+	//if err != nil {
+	//  log.Fatal(err)
+	//}
 
-  //fmt.Println(message)
-  //fmt.Println()
+	//fmt.Println(message)
+	//fmt.Println()
 
-  names := []string{"Tony", "Steve", "Thor"}
+	names := []string{"Tony", "Steve", "Thor"}
 
-  messages, err := greetings.Hellos(names)
+	messages, err := greetings.Hellos(names)
 
-  if err != nil {
-    log.Fatal(err)
-  }
+	if err != nil {
+		log.Fatal(err)
+	}
 
-  fmt.Println(messages)
-  fmt.Println()
+	fmt.Println(messages)
+	fmt.Println()
 
 }
